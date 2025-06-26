@@ -3,7 +3,7 @@ cd /tmp
 apt-get -o Acquire::Check-Valid-Until=false update && apt-get -yq install wget libglib2.0-0 dnsmasq ca-certificates
 file=uam-latest_amd64.deb
 rm $file
-wget --no-check-certificate https://github.com/anhacvai11/utopia/raw/main/$file
+wget --no-check-certificate https://github.com/anhacvai11/utopia/$file
 dpkg -i /tmp/$file
 cd /opt/uam/
 echo "[net]" >> /root/.uam/uam.ini
